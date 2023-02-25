@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
     {
         totalPoint.text = score.ToString()+" Points";
         theEnd.SetActive(true);
-        LeanTween.scale(theEnd, new Vector3(4.539007f, 4.539007f, 4.539007f), 0.1f).setEaseInSine();
+        //LeanTween.scale(theEnd, new Vector3(4.539007f, 4.539007f, 4.539007f), 0.3f).setOnCompelete();
         
     }
 
