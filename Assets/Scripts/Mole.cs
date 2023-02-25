@@ -14,7 +14,7 @@ public class Mole : MonoBehaviour
         get { return readyShow; }
         set { readyShow = value; }
     }
-    private bool hides = false;
+    private bool hides = true;
     public bool Hides   // property
     {
         get { return hides; }

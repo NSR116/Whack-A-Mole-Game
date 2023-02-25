@@ -7,11 +7,11 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    private float gameTime = 10;
+    private float gameTime = 5;
     private float duration = 0f;
     private int score = 0;
     [SerializeField] private Mole []arrayMoles;
-    [SerializeField] private float timeShow = 4f;
+    [SerializeField] private float timeShow = 3f;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text totalPoint;
     [SerializeField] private TMP_Text timeText;
@@ -81,8 +81,9 @@ public class GameManager : MonoBehaviour
     private void endGame()
     {
         totalPoint.text = score.ToString()+" Points";
-        //LeanTween.scale(theEnd, Vector3.one, 0.3f).setEaseInSine();
         theEnd.SetActive(true);
+        LeanTween.scale(theEnd, new Vector3(4.539007f, 4.539007f, 4.539007f), 0.1f).setEaseInSine();
+        
     }
 
 }
